@@ -1,0 +1,7 @@
+h1 = t('.new_build')
+
+= link_to t('.build'), project_builds_path(@project), method: :post,
+  class: 'btn'
+'
+= link_to 'Back', project_builds_path(@project)
+

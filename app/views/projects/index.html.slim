@@ -1,0 +1,20 @@
+h1 Listing projects
+
+table.table
+  tr
+    th = t('.icon')
+    th = t('.name')
+    th = t('.url')
+    th
+
+  - @projects.each do |project|
+    tr
+      td
+        = link_to project do
+          img src=project.icon_144.iphone.url
+      td = link_to project.name, project_builds_path(project)
+      td = project.url
+      td = link_to t('.edit'), project
+
+= link_to t('.new_project'), new_project_path
+

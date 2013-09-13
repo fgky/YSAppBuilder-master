@@ -1,0 +1,19 @@
+table.qr {
+  border-width: 0;
+  border-style: none;
+  border-color: #0000ff;
+  border-collapse: collapse;
+
+  td {
+    border-width: 0;
+    border-style: none;
+    border-color: #0000ff;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    width: 4px;
+    height: 4px;
+  }
+  .qr-black { background-color: #000; }
+  .qr-white { background-color: #fff; }
+}

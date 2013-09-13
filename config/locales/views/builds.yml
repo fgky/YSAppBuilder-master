@@ -1,0 +1,13 @@
+zh-CN:
+  builds:
+    index:
+      created_at: '创建时间'
+      new_build: '发布新版本'
+    new:
+      new_build: '编译新版本'
+      build: '开始编译新版本'
+    show:
+      download_ipa_file: '下载 IPA 文件'
+      install: '在线安装'
+      building: '正在打包中，请稍后刷新此页面。'
+

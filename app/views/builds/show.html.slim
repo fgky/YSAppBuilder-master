@@ -1,0 +1,22 @@
+p = notice
+
+h2 iOS
+- if @build.ios_file?
+  p
+    = link_to t('.download_ipa_file'), project_build_path(@project, @build, format: 'ipa')
+    '
+    span Or
+    '
+    = link_to t('.install'), "itms-services://?action=download-manifest&url=#{project_build_url(@project, @build, format: 'plist')}"
+- else
+  p = t('.building')
+
+h2 Android
+- if @build.android_file?
+  p
+    = link_to 'Download APK File', project_build_path(@project, @build, format: 'apk')
+
+  = link_to 'Back', project_builds_path(@project)
+- else
+  p = t('.building')
+

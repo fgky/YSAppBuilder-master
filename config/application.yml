@@ -1,0 +1,25 @@
+# Add application configuration variables here, as shown below.
+#
+# PUSHER_APP_ID: "2954"
+# PUSHER_KEY: 7381a978f7dd7f9a1117
+# PUSHER_SECRET: abdc3b896a0ffb85d373
+# STRIPE_API_KEY: EdAvEPVEC3LuaTg5Q3z6WbDVqZlcBQ8Z
+# STRIPE_PUBLIC_KEY: pk_BRgD57O8fHja9HxduJUszhef6jCyS
+
+TEMPLATE_RELEASE: 20130829
+
+YS_APP_BUILDER_ADAM_IOS_URL: "http://ysappbuilder.qiniudn.com/YBAppBuilder-20130829.zip"
+YS_APP_BUILDER_ADAM_ANDROID_URL: 'http://ysappbuilder.qiniudn.com/YSAppBuilder-Android-20130829.zip'
+
+vagrant:
+  HOST: 'http://10.0.1.26:8080/'
+
+development:
+  HOST: 'http://ysappbuilder.10.0.1.15.xip.io'
+
+staging:
+  HOST: 'http://packor.linjun.me'
+
+production:
+  HOST: 'app.35nic.com'
+

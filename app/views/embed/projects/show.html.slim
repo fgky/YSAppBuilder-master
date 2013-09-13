@@ -1,0 +1,27 @@
+h2 iOS
+- if @build.ios_file?
+  p
+    = link_to t('.download_ipa_file'), @ios_ipa_url
+    '
+    span Or
+    '
+    = link_to t('.install'), @ios_ad_hoc_url
+  .row
+    .span4
+      = render 'qr/qr', qr: @ios_qr
+    .span5 短链接：#{@ios_short_url}
+- else
+  p = t('.building')
+
+h2 Android
+- if @build.android_file?
+  p
+    = link_to t('.download_apk_file'), @android_apk_url
+  .row
+    .span4
+      = render 'qr/qr', qr: @android_qr
+    .span5 短链接：#{@android_short_url}
+- else
+  p = t('.building')
+
+

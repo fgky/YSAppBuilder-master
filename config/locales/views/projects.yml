@@ -1,0 +1,21 @@
+zh-CN:
+  projects:
+    index:
+      icon: '图标'
+      name: '名字'
+      url: '网址'
+      new_project: '新建项目'
+      builds: '已发布版本'
+      edit: '编辑'
+    new:
+      new_project: '新建项目'
+    edit:
+      editing_project: '编辑项目'
+    show:
+      name: '名字'
+      url: '网址'
+      icons: '图标'
+      edit: '编辑'
+      destroy: '删除'
+      splash-screens: '启动图片'
+

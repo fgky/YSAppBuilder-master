@@ -1,0 +1,8 @@
+zh-CN:
+  errors:
+    messages:
+      carrierwave_processing_error: "无法裁减图片"
+      carrierwave_integrity_error: "不是图片"
+      carrierwave_download_error: "无法下载图片"
+      extension_white_list_error: "我们不支持 %{extension} 格式的文件, 允许上传的图片格式：%{allowed_types}"
+      extension_black_list_error: "我们不支持 %{extension} 格式的文件, 禁止的图片格式：%{prohibited_types}"

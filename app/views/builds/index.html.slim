@@ -1,0 +1,14 @@
+h1 Listing builds of #{@project.name}
+
+= link_to t('.new_build'), new_project_build_path(@project)
+
+table.table
+  tr
+    th = t('.created_at')
+
+  - @builds.each do |build|
+    tr
+      td
+        = link_to project_build_path(@project, build) do
+          = timeago_tag(build.created_at, lang: :'zh-CN')
+

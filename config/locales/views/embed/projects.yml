@@ -1,0 +1,11 @@
+zh-CN:
+  embed:
+    projects:
+      show:
+        download_ipa_file: '下载 IPA 文件'
+        install: '在线安装'
+        building: '正在打包中，请稍后刷新此页面。'
+        download_apk_file: '下载 APK 文件'
+      form:
+        build_with_one_click: '一键打包'
+

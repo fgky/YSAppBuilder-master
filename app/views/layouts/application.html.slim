@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title Packor
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  body
+    header
+      .navbar
+        .navbar-inner
+          a.brand YSAppBuilder
+          ul.nav
+            li
+              = link_to t('.projects'), projects_path
+
+    .container-fluid
+      = yield

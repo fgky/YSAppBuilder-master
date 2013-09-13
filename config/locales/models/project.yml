@@ -1,0 +1,35 @@
+zh-CN:
+  activerecord:
+    models:
+      project: '项目'
+    attributes:
+      project:
+        name: '名字'
+        display_name: '显示名字'
+        url: '网址'
+        icon_57: '图标 57x57'
+        icon_72: '图标 72x72'
+        icon_114: '图标 114x114'
+        icon_144: '图标 144x144'
+        created_at: '创建时间'
+        splash_screen_image: '启动图片'
+    errors:
+      models:
+        project:
+          attributes:
+            name:
+              invalid: '只能以大写英文字母开头'
+  simple_form:
+    hints:
+      project:
+        name: '只能是英文字母'
+        icon_57: '非 Retina 的 iPhone 和 iPod touch'
+        icon_72: '非 Retina 的 iPad'
+        icon_114: 'Retina iPhone 和 iPod touch'
+        icon_144: 'Retina iPad'
+  helpers:
+    submit:
+      project:
+        create: "创建%{model}"
+        update: "保存"
+

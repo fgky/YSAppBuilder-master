@@ -1,0 +1,11 @@
+= simple_form_for @project, html: { class: 'form-horizontal' } do |f|
+  = f.error_notification
+  = f.input :name
+  = f.input :display_name
+  = f.input :url
+  = f.input :icon_144
+  = f.input :splash_screen_image
+  /= f.input :jpush_app_key
+  .form-actions
+    = f.button :submit
+

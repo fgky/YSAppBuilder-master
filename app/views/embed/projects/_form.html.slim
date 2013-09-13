@@ -1,0 +1,9 @@
+= simple_form_for [:embed, @project], html: { class: 'form-horizontal' } do |f|
+  = f.input :name, readonly: true
+  = f.input :display_name, readonly: true
+  = f.input :url, readonly: true, wrapper_html: { class: 'hidden' }
+  = f.input :icon_144
+  = f.input :splash_screen_image
+  /= f.input :jpush_app_key
+  = f.button :submit, t('.build_with_one_click')
+

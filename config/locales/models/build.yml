@@ -1,0 +1,8 @@
+zh-CN:
+  activerecord:
+    models:
+      build: 版本
+    attributes:
+      build:
+        created_at: '创建时间'
+

@@ -1,0 +1,83 @@
+p#notice = notice
+
+p
+  b = t('.name')
+  '
+  = @project.name
+
+p
+  b = t('.url')
+  '
+  = @project.url
+
+p
+  b = t('.icons')
+
+p iOS
+
+ul.thumbnails
+  li.span1
+    .thumbnail
+      img src=@project.icon_144.iphone.url
+  li.span2
+    .thumbnail
+      img src=@project.icon_144.ipad.url
+  li.span2
+    .thumbnail
+      img src=@project.icon_144.iphone_retina.url
+  li.span3
+    .thumbnail
+      img src=@project.icon_144.ipad_retina.url
+
+p Android
+
+ul.thumbnails
+  li.spanj
+    .thumbnail
+      img src=@project.icon_144.android_ldpi.url
+  li.span1
+    .thumbnail
+      img src=@project.icon_144.android_mdpi.url
+  li.span2
+    .thumbnail
+      img src=@project.icon_144.android_hdpi.url
+  li.span2
+    .thumbnail
+      img src=@project.icon_144.android.url
+
+p
+  b = t('.splash-screens')
+
+p iOS
+
+ul.thumbnails
+  li.span4
+    .thumbnail
+      img src=@project.splash_screen_image.iphone.url
+  li.span5
+    .thumbnail
+      img src=@project.splash_screen_image.iphone_retina.url
+
+p Android
+
+ul.thumbnails
+  li.span4
+    .thumbnail
+      img src=@project.splash_screen_image.android.url
+  li.span5
+    .thumbnail
+      img src=@project.splash_screen_image.android_ldpi.url
+  li.span5
+    .thumbnail
+      img src=@project.splash_screen_image.android_mdpi.url
+  li.span5
+    .thumbnail
+      img src=@project.splash_screen_image.android_hdpi.url
+
+= link_to t('.edit'), edit_project_path(@project)
+'
+= link_to t('.destroy'), @project, method: :delete,
+  data: { confirm: 'Are you sure?' }
+'
+= link_to 'Back', projects_path
+
